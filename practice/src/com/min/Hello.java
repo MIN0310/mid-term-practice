@@ -1,5 +1,7 @@
 package com.min;
 
+import java.util.Scanner;
+
 public class Hello {
 
 	public static void main(String[] args) {
@@ -13,6 +15,12 @@ public class Hello {
             
             Student j = new Student("Jasmine" , 80 , 90);
             j.print();
+            
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter the temperature : (C)");
+            double C = scanner.nextDouble();
+            double F = (C*9.0/5)+32;
+            System.out.printf("%.1f C = %.1f F\n",C,F);
             
         }
  
